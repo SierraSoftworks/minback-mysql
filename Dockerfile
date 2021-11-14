@@ -9,7 +9,7 @@ FROM mysql:8.0.27
 LABEL maintainer="Benjamin Pannell <admin@sierrasoftworks.com>"
 
 # Install the latest ca-certificates package to resolve Lets Encrypt auth issues
-RUN apt-get update && apt-get install ca-certificates && update-ca-certifcates
+RUN apt-get update && apt-get install ca-certificates
 
 COPY --from=0 /tmp/mc /usr/bin/mc
 
