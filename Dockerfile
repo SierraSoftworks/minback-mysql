@@ -5,7 +5,7 @@ RUN wget -O /tmp/mc https://dl.minio.io/client/mc/release/linux-amd64/mc
 RUN chmod +x /tmp/mc
 
 # Then build our backup image
-FROM mysql:8.0.29
+FROM mysql:8.0.30
 LABEL maintainer="Benjamin Pannell <admin@sierrasoftworks.com>"
 
 # Install the latest ca-certificates package to resolve Lets Encrypt auth issues
