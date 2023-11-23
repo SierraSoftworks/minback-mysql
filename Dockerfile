@@ -5,7 +5,7 @@ RUN wget -O /tmp/mc https://dl.minio.io/client/mc/release/linux-amd64/mc
 RUN chmod +x /tmp/mc
 
 # Then build our backup image
-FROM mariadb:11.1.3-jammy
+FROM mariadb:11.2.2-jammy
 LABEL maintainer="Benjamin Pannell <admin@sierrasoftworks.com>"
 
 # Install the latest ca-certificates package to resolve Lets Encrypt auth issues
